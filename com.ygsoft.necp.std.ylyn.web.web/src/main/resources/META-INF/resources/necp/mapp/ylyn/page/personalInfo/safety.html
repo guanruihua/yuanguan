@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>安全信息</title>
+<link rel="stylesheet" type="text/css" href="css/personal.css">
+</head>
+<body style="background-color: white;">
+	<!--涓汉淇℃伅-->
+	<div class="content">
+		<div>
+			<label>安全信息</label>
+		</div>
+		<div class="line"></div>
+		<div class="safe">
+			<table>
+
+				<tr>
+					<label style="font-size: 18px;">&#12288;安全信息</label>
+					<hr />
+					<td class="td1">账户ID:</td>
+					<td class="td2" id="ID"></td>
+				</tr>
+				<tr>
+					<td class="td1">绑定邮箱:</td>
+					<td class="td2" id="mail"></td>
+					<td><button type="button" id="cgmail">修改邮箱</button></td>
+				</tr>
+				<tr>
+					<td class="td1">绑定手机:</td>
+					<td class="td2" id="phone"></td>
+					<td><button type="button" id="cgphone">修改手机</button></td>
+				</tr>
+				<tr>
+					<td class="td1">登陆密码:</td>
+					<td class="td2" id="password"></td>
+					<td><button type="button" id="cgpwd">修改密码</button></td>
+				</tr>
+				<tr id='v1' style="display: none">
+					<td class="td1" id="t1">新密码</td>
+					<td class="td2"><input id="t2" type="text" id="newpwd"></td>
+				</tr>
+				<tr id='v2' style="display: none">
+					<td class="td1">确认密码</td>
+					<td class="td2"><input type="text" id="repwd"></td>
+				</tr>
+				<tr id='v3' style="display: none">
+					<td></td>
+					<td><button type="button" id="cg">确认修改</button></td>
+				</tr>
+			</table>
+
+		</div>
+		<!--info-->
+	</div>
+	<!--content-->
+	<script data-main="../../scripts/personalInfo/securityInfo.js"
+		src="../../../../../ecp/webcore/scripts/ecp.starter.js?mapp.name=mapp.demo"></script>
+</body>
+</html>

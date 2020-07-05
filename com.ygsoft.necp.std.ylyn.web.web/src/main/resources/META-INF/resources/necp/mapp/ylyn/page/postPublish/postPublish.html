@@ -1,0 +1,79 @@
+<!--网页第一步，doctype声明和meta utf-8和css引入-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发布新帖</title>
+<link rel="stylesheet" type="text/css" href="css/post.css">
+</head>
+<body>
+	<div class="box">
+		<!--标题栏-->
+		<div class="box ttBar">
+			<div class="box ttBar_img">
+				<div class="box tt_layout_top">
+					<div class="box logo"></div>
+				</div>
+				<div class="box tt_layout_bottom">
+					<form>
+						<div class="box searchBar">
+							<input type="text" id="search" maxlength="15" placeholder="请输入您要搜索的内容...">
+							<button type="button" id="content"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="box navigation">
+			<table>
+				<tr>
+					<td><a href="../home/index.html?1">论坛主页</a></td>
+					<td><a href="../home/friend.html?1">交友区</a></td>
+					<td><a href="../home/talk.html?1">闲谈区</a></td>
+					<td><a href="../home/notice.html?1">公告区</a></td>
+				</tr>
+
+			</table>
+		</div>
+
+		<div class="box main">
+			<div class="box post_title">发布新帖</div>
+			<div class="box line"></div>
+
+			<div class="box text post">
+				<div class="box postName">
+					标题：<input type="text" id="postName" maxlength="15"> <select id="postType">
+						<option>交友区</option>
+						<option>闲谈区</option>
+					</select>
+				</div>
+				<div class="box post_content">
+					内容：
+					<textarea id="postContent" maxlength="100"></textarea>
+				</div>
+				<div class="post_submit">
+					<table>
+						<tr>
+							<td><button type="button" id="submit">发布</button></td>
+							<td><button type="button" id="reset">清空</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="box bottom">
+			<footer>
+				<pre>
+					<a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">地址</a> | <a
+						href="">邮箱</a> | <a href="">发展历史</a> | <a href="">了解更多</a>
+
+			设计By远光小组</pre>
+			</footer>
+		</div>
+	</div>
+	<script data-main="../../scripts/postPublish/postPublish.controller.js"
+		src="../../../../../ecp/webcore/scripts/ecp.starter.js?mapp.name=mapp.demo"></script>
+	<script src="../../scripts/home/search.controller.js"></script>
+</body>
+</html>

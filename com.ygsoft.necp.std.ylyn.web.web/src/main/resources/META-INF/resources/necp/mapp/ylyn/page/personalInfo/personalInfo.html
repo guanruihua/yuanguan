@@ -1,0 +1,76 @@
+<!--网页第一步，doctype声明和meta utf-8和css引入-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人信息</title>
+<link rel="stylesheet" type="text/css" href="css/personal.css">
+</head>
+<body>
+	<div class="box">
+		<!--标题栏-->
+		<div class="box ttBar">
+			<div class="box ttBar_img">
+				<div class="box tt_layout_top">
+					<div class="box logo"></div>
+				</div>
+				<div class="box tt_layout_bottom">
+					<form>
+						<div class="box searchBar">
+							<input type="text" id="content" maxlength="15" placeholder="请输入您要搜索的内容...">
+							<button type="button" id="search"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="box navigation">
+			<table>
+				<tr>
+					<td><a href="../home/index.html?1">论坛主页</a></td>
+					<td><a href="../home/friend.html?1">交友区</a></td>
+					<td><a href="../home/talk.html?1">闲谈区</a></td>
+					<td><a href="../home/notice.html?1">公告区</a></td>
+				</tr>
+
+			</table>
+		</div>
+		<!--主体内容-->
+		<div class="box main">
+			<!--侧边栏-->
+			<div class="sider">
+				<div class="sider_info">
+					<a href="info.html" target="frame">个人资料</a><br /> <a
+						href="safety.html" target="frame">安全信息</a><br /> <a
+						href="post.html?1" target="frame">我的帖子</a><br /> <a
+						href="follow.html?1" target="frame">关注帖子</a><br />
+				</div>
+			</div>
+			<!--个人资料-->
+			<div class="personal_info">
+				<iframe name="frame" src="info.html" frameborder="0" scrolling="no">
+				</iframe>
+			</div>
+		</div>
+		<!--main-->
+
+		<!--bottom-->
+		<div class="box bottom">
+			<footer>
+				<a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">地址</a> | <a
+					href="">邮箱</a> | <a href="">发展历史</a> | <a href="">了解更多</a> <br>
+				<a>设计By远光小组</a>
+			</footer>
+		</div>
+	</div>
+	<script>
+		function upload() {
+			document.getElementById("img-upload").click();
+		}
+	</script>
+	<script
+		data-main="../../scripts/home/search.controller.js"
+		src="../../../../../ecp/webcore/scripts/ecp.starter.js?mapp.name=mapp.demo"></script>
+</body>
+</html>

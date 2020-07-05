@@ -1,0 +1,358 @@
+/*
+蓝色#0b3f62
+粉色#fc6c7c
+浅粉#ffc0a3
+*/
+html {/*滚动条*/
+	scrollbar-width:none;/*firefox*/
+}
+
+body{
+	margin: 0;
+	background-color: #ffc0a3;
+	font-family:Microsoft YaHei;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{display: none;}
+::-o-scrollbar{display: none;}
+
+/*整体布局*/
+/*未完全优化*/
+.box{
+	display: -webkit-flex;/*Safari*/
+	display: flex;
+
+	flex-direction: row;/*主轴垂直方向，起点在上沿*/
+	flex-wrap: wrap;/*换行，从上往下*/
+	/*justify-content: flex-start;/*主轴对齐方向，左对齐*/
+	width: 100%;
+}
+
+/*标题栏*/
+.ttBar{
+	height: 200px;
+}
+.ttBar_img{
+	background-image: url(../../page/pic/index-1.png);
+	background-size: cover;/*背景图片固定
+	background-size: 100% 100%;
+	/*justify-content: space-between;
+	align-items: flex-start;*/
+	background-repeat:no-repeat;
+}
+.friend_bgimg{background-image: url(../../page/pic/friend_bgimg.jpg);background-size: cover;}
+.talk_bgimg{background-image: url(../../page/pic/talk_bgimg.jpg);background-size: cover;}
+.notice_bgimg{background-image: url(../../page/pic/notice_bgimg.jpg);background-size: cover;}
+
+/*logo和用户信息/登录和注册布局*/
+.tt_layout_top{
+	justify-content: space-between;
+  	align-items: flex-start;
+}
+
+/*logo*/
+.logo{
+	/*background-color: black;*/
+	background-image: url(../../page/pic/ylyn.png);
+	background-size: 100%;
+	width: 150px;
+	height: 40px;
+	margin: 5px 0 0 5px;
+}
+
+/*登录和注册*/
+.login{
+	width: 150px;
+	height: 40px;
+
+	background:rgba(255,255,255,0.5);
+	border-radius: 5px;
+	margin: 3px 3px 0 0;
+
+	justify-content: center;
+ 	align-items: center;
+
+ 	color: #0b3f62;
+ 	font-size: 18px;
+}
+.login a{
+	text-decoration: none;
+	color: #0b3f62;
+}
+.login a:hover{text-decoration: underline;}
+/*用户信息*/
+.user_message{
+	width: 250px;
+	height: 40px;
+
+	/*background-color: yellow;*/
+	background:rgba(255,255,255,0.5);
+	border-radius: 5px;
+	margin: 3px 3px 0 0;
+
+	justify-content: center;
+ 	align-items: center;
+
+ 	color: #0b3f62;
+ 	font-size: 18px;
+}
+.user_message a{
+	text-decoration: none;
+	color: #0b3f62;
+}
+.user_message a:hover{text-decoration: underline;}
+.user_message table{
+	width: 400px;
+	text-align: center;
+	/*background-color: blue;*/
+}
+
+/*搜索框布局*/
+.tt_layout_bottom {
+	justify-content: flex-end;
+  	align-items: flex-end;
+  	/*background-color: blue;*/
+}
+/*搜索框*/
+.searchBar{
+	width: 300px;
+	height: 40px;
+	margin: 0 3px 5px 0;
+}
+.searchBar input{
+	border: 2px solid #fc6c7c;
+	border-radius: 5px 0 0 5px;
+	width: 250px;
+	font-size: 15px;
+}
+.searchBar button{
+	border-radius: 0 5px 5px 0;
+	background-image: url("../../page/pic/search.png");
+	background-size: 100% 100%;
+	width: 40px;
+	border: 2px solid #fc6c7c;
+}
+
+/*导航栏*/
+.navigation {
+	background-color: #fc6c7c;
+	height: 35px;
+}
+.navigation table{
+	height: 100%;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 0 80px;
+	width: 600px;
+}
+.navigation a{
+	text-decoration: none;
+	color: white;
+}
+.navigation a:hover{color: #0b3f62;}
+
+/*主体内容*/
+.main {
+	background-color: white;
+	height: auto;
+	width: 90%;
+	margin: auto;
+}
+
+.post_title{
+	color: #0b3f62;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 0 10px 30px;
+}
+
+.postName{
+	/*background-color: red;*/
+	padding: 0;
+	width: 90%;
+	margin: 0 0 10px 0;
+}
+.postName input{
+	width: 75%;
+	height: 20px;
+	font-size: 20px;
+}
+.post{
+	padding: 10px 0 10px 30px;
+}
+
+/*文本颜色*/
+.text{
+	color: #0b3f62;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+/*发帖内容样式更改*/
+.post_style{
+	width: 80%;
+	/*background-color: orange;*/
+	margin: 5px 0 5px 0;
+}
+
+/*帖子内容*/
+.post_content{
+	/*background-color: blue;*/
+	padding: 5px 0 0 0;
+	width: 90%;
+}
+
+textarea{
+	width: 95%;
+	height: 300px;
+	font-size: 20px;
+	margin: 10px auto 0;
+}
+
+/*提交按钮*/
+.post_submit{
+	/*background-color: green;*/
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+.post_submit table{
+	width: 300px;
+	margin: auto;
+}
+.post_submit button{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border:0;
+	background-color: #fc6c7c;
+	color: white;
+}
+
+/*交友区*/
+iframe{
+	height: 100%;
+	width: 100%; 
+	margin: 0;
+}
+
+/*分割线*/
+.line{
+	background-color: #fc6c7c;
+	width: 100%;
+	height: 5px;
+}
+
+/*浏览帖子*/
+.sider_user{
+	width: 20%;
+	min-height: 1000px;
+	height: auto;
+	background-color: #ffc0a3;}
+.main_post{
+	width: 80%;
+	height: auto;
+	background-color: #fc6c7c;
+}
+.post_reply{
+	background-color: whitesmoke;
+	border-radius: 15px;
+	margin: 0 auto 5px;
+	width: 99%;}
+.post_reply textarea{height: 150px;}
+.post_name{
+	background-color: whitesmoke;
+	flex:1;
+	margin: 0 auto 5px;
+}
+.post_name a{color: #0b3f62;display: inline-block;}
+.post_name a:hover{text-decoration: underline;}
+.post_name p{width: auto; color: #0b3f62;}
+/*浏览帖子-用户*/
+.user_float{
+	background-color: white;
+	border-radius: 15px;
+	width: 220px;
+	height: 250px;
+	margin: 20px auto;
+
+	box-shadow: 10px 10px 5px #888888;
+}
+.user_float table{
+	text-align: center;
+	margin: 10px auto;
+	color: grey;
+}
+.user_float img{width: 150px;height: 150px;background-size: cover;}
+.user_bottom table{width: 90%;}
+
+/*回复*/
+.floor{
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	background-color: #0b3f62;
+}
+.floor_user{
+	width: 20%;
+	min-height: 300px;
+	height: auto;
+	background-color: white;
+}
+.floor_user img{width: 150px;height: 150px;background-size: cover;}
+.floor_user table{margin: auto;text-align: center;}
+.floor_content{
+	width: auto;
+	min-height: 300px;
+	height: auto;
+	flex: 2;
+	margin: 0 0 0 1px;
+	padding: 0 0 0 20px;
+	background-color: white;
+}
+.floor_p{min-height: 290px;}
+.floor_bottom{
+	flex:1;
+	width: 100%;
+	min-height: 10px;
+}
+
+/*展示帖子*/
+.block{
+	width: 100%;
+	margin: 0 30px 0 30px;
+}
+.block a{
+	display: block;
+	margin: 0 0 4px 0;
+	color: #0b3f62;
+	text-decoration: none;
+}
+.block a:hover{text-decoration: underline;}
+span{float: right;padding: 0 15px;}
+
+/*快速发帖*/
+.quick_post{width: 100%;}
+
+.bottom{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border-radius: 5px;
+	/*background-color: blue;*/
+	background:rgba(255,255,255,0.5);
+
+	font-size: 15px;
+}
+footer{
+	margin: auto;
+	text-align: center;
+}
+p{color:black;}
+p a{color:black;}
+
+a{text-decoration: none;}
+a:hover{color: #0b3f62;}

@@ -1,0 +1,22 @@
+[
+	{
+		"bizState":0,
+		"caption":"信息",
+		"classId":"10002",
+		"createDate":"2020-06-13 11:59:25",
+		"domainId":"434a454942e649d59b5f4f2dbc58a41b",
+		"gid":"9ce05ce9e8929cfd8750bbc4bcf8c309",
+		"modelState":0,
+		"stop":0
+	},
+	{
+		"bizState":0,
+		"caption":"用户",
+		"classId":"1001",
+		"createDate":"2020-06-13 11:50:32",
+		"domainId":"434a454942e649d59b5f4f2dbc58a41b",
+		"gid":"13304f9a235709d9fd0c6fc1f0f4b537",
+		"modelState":0,
+		"stop":0
+	}
+]

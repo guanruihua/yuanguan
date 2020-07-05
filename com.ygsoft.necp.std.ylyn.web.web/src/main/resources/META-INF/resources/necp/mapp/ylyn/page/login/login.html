@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<div class="box">
+	<div class="box content">
+		<div class="box login">
+			<p>登录</p>
+			<form>
+				<table>
+					<tr><td>用户名：</td><td><input type="text" id="userName"></td></tr>
+					<tr><td>密码：</td><td><input type="password" id="password"></td></tr>
+					<tr><td colspan="2">
+						<div class="buttonDiv">
+							<button class="button" id="login" type="button">登录</button>
+							<button class="button" id="register" type="button">注册</button>
+						</div>
+					</td></tr>
+				</table>
+			</form>
+			<div class="login_bottom">
+				<div class="index" id="index"><a href="../home/index.html">返回主页</a></div>
+				<div class="forget"><a href="">忘记密码？</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="box bottom">
+		<footer>
+			<pre><a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">地址</a> | <a href="">邮箱</a> | <a href="">发展历史</a> | <a href="">了解更多</a>
+
+			设计By远光小组</pre>
+		</footer>
+	</div>
+</div>
+<script data-main="../../scripts/login/login.controller.js"
+		src="../../../../../ecp/webcore/scripts/ecp.starter.js?mapp.name=mapp.demo"></script>
+</body>
+</html>

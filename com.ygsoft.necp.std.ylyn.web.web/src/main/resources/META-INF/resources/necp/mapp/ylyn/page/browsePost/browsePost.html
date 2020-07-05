@@ -1,0 +1,177 @@
+<!--网页第一步，doctype声明和meta utf-8和css引入-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浏览帖子</title>
+<link rel="stylesheet" type="text/css"
+	href="../../css/browsePost/browsepost.css">
+</head>
+<body>
+	<div class="box">
+		<!--标题栏-->
+		<div class="box ttBar">
+			<div class="box ttBar_img">
+				<div class="box tt_layout_top">
+					<div class="box logo"></div>
+					<!--登陆前的-->
+					<div class="box login" id="login">
+						<a href="../login/login.html">登录</a>/<a href="../rgst/rgst.html">注册</a>
+					</div>
+				</div>
+				<div class="box tt_layout_bottom">
+					<form>
+						<div class="box searchBar">
+							<input type="text" id="content" maxlength="15" placeholder="请输入您要搜索的内容...">
+							<button type="button" id="search"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="box navigation" id="navigation">
+			<table>
+				<tr>
+					<td><a href="../home/index.html">论坛主页</a></td>
+					<td><a href="../home/friend.html?1">交友区</a></td>
+					<td><a href="../home/talk.html?1">闲谈区</a></td>
+					<td><a href="../home/notice.html?1">公告区</a></td>
+				</tr>
+
+			</table>
+		</div>
+
+		<div class="box main">
+			<div class="sider_user">
+				<div class="box user_float">
+					<table border="0">
+						<tr>
+							<td colspan="2"><img id="posterHead" src="../img/4.jpg"
+								alt="头像" border="1"></td>
+						</tr>
+						<tr>
+							<td colspan="2" id="userName">用户名</td>
+						</tr>
+						<tr>
+							<td colspan="2" id="personalSigna">个性签名</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="main_post">
+				<div class="post_name post_title">
+					<p id="postName">帖子名</p>
+					<p class="post_submit">
+						<button id="like">关注该贴</button>
+						<span id="deleteButton" style="display: none;"><button id="delete">删除该帖</button></span>
+					</p>
+				</div>
+				<div class="box post_reply" id="reply" style="margin: 0 auto 10px;">
+					<textarea id="replyText" maxlength="100"></textarea>
+					<div class="post_submit">
+						<span style="float: right;margin: 0 10px 0 0;"><button
+								type="button" id="replyButton">回复</button></span>
+					</div>
+				</div>
+				<div class="post_reply" style="border-radius: 0;">
+					<div class="box floor">
+						<div class="box floor_user">
+							<table border="0">
+								<tr>
+									<td><img src="../img/4.jpg" alt="头像" id="ownerHead"
+										border="1"></td>
+								</tr>
+								<tr>
+									<td><p style="height: 10px;" id="oneFloor">楼主</p></td>
+								</tr>
+								<tr>
+									<td>楼主</td>
+								</tr>
+							</table>
+						</div>
+						<div class="box floor_content">
+							<div class="box floor_p">
+								<p id="oneContext">内容</p>
+							</div>
+							<div class="floor_bottom">
+								<span style="float: right;" id="oneDate">日期</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="post_reply" style="border-radius: 0;display: none;"
+					id="two">
+					<div class="box floor">
+						<div class="box floor_user">
+							<table border="0">
+								<tr>
+									<td><img src="../img/4.jpg" alt="头像" id="twoFloorHead"
+										border="1"></td>
+								</tr>
+								<tr>
+									<td style="height: 10px;" id="twoFloor">二楼</td>
+								</tr>
+								<tr>
+									<td id="twoFloorNum">二楼</td>
+								</tr>
+							</table>
+						</div>
+						<div class="box floor_content">
+							<div class="box floor_p">
+								<p id="twoContext">内容</p>
+							</div>
+							<div class="floor_bottom">
+								<span style="float: right;" id="twoDate">日期</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="post_reply" style="border-radius: 0;display: none;"
+					id="three">
+					<div class="box floor">
+						<div class="box floor_user">
+							<table border="0">
+								<tr>
+									<td><img src="../img/4.jpg" alt="头像" id="threeFloorHead"
+										border="1"><br /></td>
+								</tr>
+								<tr>
+									<td style="height: 10px;" id="threeFloor">三楼</td>
+								</tr>
+								<tr>
+									<td id="threeFloorNum">三楼</td>
+								</tr>
+							</table>
+						</div>
+						<div class="box floor_content">
+							<div class="box floor_p">
+								<p id="threeContext">内容</p>
+							</div>
+							<div class="floor_bottom">
+								<span style="float: right;" id="threeDate">日期</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="page"></div>
+
+			</div>
+		</div>
+
+		<div class="box bottom">
+			<footer>
+				<p>
+					<a href="">关于我们</a>&nbsp;|&nbsp;<a href="">联系我们</a>&nbsp;|&nbsp;<a
+						href="">地址</a>&nbsp;|&nbsp;<a href="">邮箱</a>&nbsp;|&nbsp;<a
+						href="">发展历史</a>&nbsp;|&nbsp;<a href="">了解更多</a> <br /> <br />
+					设计By远光小组
+				</p>
+			</footer>
+		</div>
+	</div>
+	<script data-main="../../scripts/browsePost/browsePost.controller.js"
+		src="../../../../../ecp/webcore/scripts/ecp.starter.js?mapp.name=mapp.demo"></script>
+	<script src="../../scripts/home/search.controller.js"></script>
+</body>
+</html>

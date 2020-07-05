@@ -1,0 +1,139 @@
+/*
+蓝色#0b3f62
+粉色#fc6c7c
+浅粉#ffc0a3
+*/
+html {/*滚动条*/
+	scrollbar-width:none;/*firefox*/
+}
+
+body{
+	margin: 0;
+	/*background-color: #ffc0a3;*/
+	font-family:Microsoft YaHei;
+
+	background-image: url(../pic/login-img.png);
+	background-size: cover;/*背景图片固定*/
+}
+form{width: 100%;height: 100%;}
+
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{display: none;}
+::-o-scrollbar{display: none;}
+
+/*整体布局*/
+/*未完全优化*/
+.box{
+	display: -webkit-flex;/*Safari*/
+	display: flex;
+
+	flex-direction: column;/*主轴垂直方向，起点在上沿*/
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	/*flex-wrap: wrap;/*换行，从上往下*/
+	/*justify-content: flex-start;/*主轴对齐方向，左对齐*/
+	width: 100%;
+}
+.content{
+	width: 100%;
+	height: 620px;
+	/*background-color: yellow;*/
+	margin: 0 0 10px 0;
+
+	justify-content: center;
+	align-items: flex-end;
+}
+.login{
+	background-color: blue;
+	width: 400px;
+	height: 300px;
+	border-radius: 20px;
+
+	margin: 0 10% 0 0;
+
+	background:rgba(255,255,255,0.9);
+
+	align-items: flex-end;
+}
+.register{
+	background-color: blue;
+	width: 400px;
+	height: 500px;
+	border-radius: 20px;
+
+	margin: 0 10% 0 0;
+
+	background:rgba(255,255,255,0.9);
+
+	align-items: flex-end;
+
+	/*text-align: right;*/
+}
+p{
+	color: #fc6c7c;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 20px auto 0 auto;
+}
+
+.button{
+	width: 60px;
+	height: 35px;
+	margin: 0 30px;
+	border-radius: 5px;
+	border:0;
+	background-color: #fc6c7c;
+	color: white;
+	font-size: 20px;
+}
+.buttonDiv{
+	/*background-color: blue;*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+table{
+	color: #0b3f62;
+	/*text-align: right;*/
+	font-size: 20px;
+	margin: 20px auto 0 auto;
+	/*background-color: blue;*/
+	height: 80px;
+}
+td{height: 40px;}
+input{
+	height: 20px;
+	width: 200px;
+	font-size: 20px;
+}
+/*.forget{background-color: red;}*/
+.login_bottom{
+	/*background-color: green;*/
+	width: 100%;
+}
+.index{padding: 0 15px;float: left;}
+.forget{float: right;}
+.login_bottom a{color: grey;}
+/*.index,.forget{background-color: red;}*/
+
+.bottom{
+	width: 50%;
+	height: auto;
+	margin: auto;
+	border-radius: 5px;
+	/*background-color: blue;*/
+	background:rgba(255,255,255,0.5);
+
+	font-size: 15px;
+}
+footer{
+	margin: auto;
+}
+pre{color:black;}
+pre a{color:black;}
+
+a{text-decoration: none;}
+a:hover{color: #0b3f62;}

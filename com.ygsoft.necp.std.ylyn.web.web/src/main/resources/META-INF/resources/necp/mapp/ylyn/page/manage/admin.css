@@ -1,0 +1,127 @@
+/*
+蓝色#0b3f62
+粉色#fc6c7c
+浅粉#ffc0a3
+*/
+html {/*滚动条*/
+	scrollbar-width:none;/*firefox*/
+}
+
+body{
+	margin: 0;
+	background-color: #ffc0a3;
+	font-family:Microsoft YaHei;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{display: none;}
+::-o-scrollbar{display: none;}
+
+/*整体布局*/
+/*未完全优化*/
+.box{
+	display: -webkit-flex;/*Safari*/
+	display: flex;
+
+	flex-direction: row;/*主轴垂直方向，起点在上沿*/
+	flex-wrap: wrap;/*换行，从上往下*/
+	/*justify-content: flex-start;主轴对齐方向，左对齐*/
+	width: 100%;
+}
+
+/*顶部*/
+.admin{padding: 10px 0;}
+/*搜索框*/
+.searchBar{
+	width: 100%;
+	height: 40px;
+	margin: 0 3px 5px 0;
+}
+.searchBar input{
+	border: 2px solid #fc6c7c;
+	width: auto;
+	flex: 1;
+	font-size: 15px;
+}
+.searchBar button{
+	background-image: url(../pic/search.png);
+	background-size: 100% 100%;
+	width: 40px;
+	border: 2px solid #fc6c7c;
+}
+
+/*主体内容*/
+.main {
+	background-color: white;
+	height: auto;
+	width: 90%;
+	margin: auto;
+}
+.main a{
+	display: block;
+	margin: 0 0 4px 0;
+	color: #0b3f62;
+	text-decoration: none;
+}
+.main span{float: right;}
+
+/*发帖*/
+.postName{
+	padding: 0;
+	width: 100%;
+}
+.postName input{
+	width: auto;
+	flex:1;
+	height: 20px;
+	font-size: 20px;
+}
+.post_submit{
+	/*background-color: green;*/
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+.post_submit table{
+	width: 300px;
+	margin: auto;
+}
+.post_submit button{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border:0;
+	background-color: #fc6c7c;
+	color: white;
+}
+textarea{
+	width: auto;
+	flex:1;
+	height: 150px;
+	font-size: 20px;
+	margin: 10px 0 0 0;
+}
+.text{
+	color: #0b3f62;
+	font-weight: bold;
+}
+
+/*分割线*/
+.line{
+	background-color: #fc6c7c;
+	width: 100%;
+	height: 3px;
+}
+
+/*帖子*/
+.post_title{
+	color: #0b3f62;
+	margin: 0 10px 5px 10px;
+}
+.post_name{
+	display: inline-block;
+}
+.post_delete{
+	display: inline-block;
+	float: right;
+}
+.post_delete a:hover{text-decoration: underline;}
